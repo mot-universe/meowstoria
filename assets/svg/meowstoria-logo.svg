@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 360" role="img" aria-labelledby="title desc">
+<title id="title">Meowstoria Logo Placeholder</title>
+<desc id="desc">Original hand-drawn style logo placeholder for Meowstoria.</desc>
+<defs>
+  <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="2" seed="9"/><feDisplacementMap in="SourceGraphic" scale="3"/></filter>
+  <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<g filter="url(#rough)">
+  <path d="M92 66 C186 25 323 43 422 61 C533 82 636 26 770 60 C867 84 921 151 891 234 C852 341 674 323 508 315 C345 307 172 337 91 265 C26 207 31 107 92 66Z" fill="#fff2d3" stroke="#1b0d08" stroke-width="14"/>
+  <path d="M122 77 C212 51 325 67 421 82 C537 100 636 56 756 82 C833 99 875 147 850 218 C817 299 661 286 511 280 C361 274 199 298 128 239 C75 196 76 107 122 77Z" fill="#17100d" opacity=".92"/>
+  <text x="490" y="168" text-anchor="middle" font-family="Georgia,serif" font-size="90" font-weight="900" fill="#ff2626" stroke="#1b0d08" stroke-width="4" letter-spacing="4">MEOWSTORIA</text>
+  <text x="490" y="226" text-anchor="middle" font-family="Georgia,serif" font-size="34" font-weight="700" fill="#fff2d3" letter-spacing="7">THE RISE OF MONSTER EATER</text>
+  <path d="M410 247 C455 269 528 270 575 247" fill="none" stroke="#ff2626" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="490" cy="271" r="16" fill="#fff2d3" stroke="#1b0d08" stroke-width="6"/>
+  <path d="M480 271 C489 258 501 258 510 271 C501 284 489 284 480 271Z" fill="#1b0d08"/>
+</g>
+</svg>

@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Meowstoria — The Rise of Monster Eater</title>
+  <meta name="description" content="A parry-focused soulslike where players hunt, cook, and eat monsters to level up, unlock skills, and become the God of Parry.">
+  <meta property="og:title" content="Meowstoria — The Rise of Monster Eater">
+  <meta property="og:description" content="Parry mastery. Monster-eating progression. Possession-powered combat. Feast before the hunt.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/media/media-hero-slide.png">
+  <link rel="icon" href="assets/svg/sigil-eye.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="page-progress" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="header-logo" href="#home" aria-label="Back to Meowstoria home">
+      <img src="assets/media/meowstoria-header-logo.png" alt="Meowstoria">
+    </a>
+
+    <button class="mobile-menu" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <div class="nav-center">
+      <form class="codex-search" role="search">
+        <input type="search" placeholder="SEARCH THE CODEX" aria-label="Search the codex">
+      </form>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#combat">Combat</a>
+        <a href="#food">Food</a>
+        <a href="#worlds">Worlds</a>
+        <a href="#story">Story</a>
+      </nav>
+    </div>
+
+    <nav class="social-strip" aria-label="Social links">
+      <a href="#" aria-label="X">IG</a>
+      <a href="#" aria-label="Discord">X</a>
+      <a href="#" aria-label="TikTok">TT</a>
+      <a href="#" aria-label="YouTube">YT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" data-theme="light">
+      <div class="hero-video-wrap" aria-hidden="true">
+        <video class="hero-bg-video" autoplay muted loop playsinline preload="auto" poster="assets/media/media-hero-slide.png">
+          <source src="assets/media/hero-bg.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-bg-layer layer-video-overlay"></div>
+      <div class="hero-bg-layer layer-smoke"></div>
+
+      <div class="hero-content">
+        <p class="hero-pitch">A parry-focused soulslike where players hunt, cook, and eat monsters to level up, unlock skills, and become the God of Parry.</p>
+      </div>
+    </section>
+
+    <section class="trailer-zone" id="trailer">
+      <div class="trailer-title" aria-label="Trailer section title">
+        <h2>Trailer</h2>
+      </div>
+      <div class="trailer-shell">
+        <div class="media-frame video-frame trailer-main-video" data-open-trailer data-youtube-url="https://www.youtube.com/watch?v=srcEO_vhoco">
+          <img src="assets/media/media-hero-slide.png" alt="Meowstoria trailer placeholder">
+          <button class="play-button" aria-label="Play trailer">▶</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-section scene-pawleaf" id="combat">
+      <div class="feature-grid">
+        <div class="media-frame">
+          <img src="assets/media/media-combat-slide.png" alt="Combat identity slide">
+        </div>
+        <article class="smoke-panel">
+          <p class="section-label">Combat Identity</p>
+          <h2>Parry Is Identity</h2>
+          <p>Defense is not a single button check. Meowstoria turns timing into a mastery ladder: Parry, Perfect, Poise, and Divine.</p>
+          <div class="tier-row">
+            <span>Parry</span><span>Perfect</span><span>Poise</span><span>Divine</span>
+          </div>
+          <p class="micro-copy">read → respond → destabilize → convert → empower</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="feature-section scene-night alt">
+      <div class="feature-grid">
+        <article class="smoke-panel align-right">
+          <p class="section-label">Possession Combat</p>
+          <h2>Zed Is Not Just Story</h2>
+          <p>After posture break, Zed forcibly hijacks Lionis for a brutal Finisher. When Meowtime is earned, Absolute Time stops the battlefield for a short stylish burst.</p>
+          <ul class="slash-list">
+            <li><b>Finisher</b> — sudden forced takeover after posture break.</li>
+            <li><b>Meowtime</b> — ~5 second Absolute Time execution burst.</li>
+            <li><b>Fat Mode</b> — chonky but deadly, same speed, major damage payoff.</li>
+          </ul>
+        </article>
+        <div class="media-frame">
+          <img src="assets/media/media-possession-slide.png" alt="Possession combat slide">
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-section scene-red" id="food">
+      <div class="feature-grid">
+        <div class="media-frame">
+          <img src="assets/media/media-feast-slide.png" alt="Feast ritual slide">
+        </div>
+        <article class="smoke-panel">
+          <p class="section-label">Monster-Eating Progression</p>
+          <h2>Hunt. Cook. Eat. Grow.</h2>
+          <p>Monsters are not filler. Enemies become ingredients, dishes, Nutrition Points, Fat fuel, buffs, Sigils, and long-term growth.</p>
+          <div class="pipeline">
+            <span>Enemy</span><i></i><span>Monster Part</span><i></i><span>Dish</span><i></i><span>Growth</span>
+          </div>
+          <p class="micro-copy">Food is power, not healing. Ignis Tears stay as the dedicated direct HP recovery system.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="ritual-section">
+      <div class="ritual-card">
+        <img src="assets/svg/sigil-eye.svg" alt="" aria-hidden="true">
+        <h2>Feast Before The Hunt</h2>
+        <p>The checkpoint is where risk becomes planning: rest, cook, assign Pouch Rift, perform Feast Ritual, convert NP to XP, bind Ignis Scales, and commit to the next expedition.</p>
+        <div class="ritual-actions">
+          <span>Cook</span>
+          <span>Pouch Rift</span>
+          <span>Feast Ritual</span>
+          <span>Level Growth</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="world-section" id="worlds">
+      <div class="section-heading">
+        <p class="section-label">World Structure</p>
+        <h2>Seven Realms, One Hidden Final Path</h2>
+        <p>Defeat, cook, and eat the seven Main Boss meals to activate Crown Sigils and reveal Chronovale.</p>
+      </div>
+      <div class="realm-grid">
+        <article><b>Obelusk</b><span>Frostlands</span></article>
+        <article><b>Moltrax</b><span>Magmora</span></article>
+        <article><b>Skyrion</b><span>Grasveil</span></article>
+        <article><b>Kravos</b><span>Eclipse</span></article>
+        <article><b>Velmora</b><span>Full Moon</span></article>
+        <article><b>Zeus</b><span>Nimbus</span></article>
+        <article><b>Zyrrath</b><span>Noctveil</span></article>
+        <article class="locked"><b>Chronos</b><span>Chronovale</span></article>
+      </div>
+      <div class="media-frame wide">
+        <img src="assets/media/media-worlds-slide.png" alt="World structure slide">
+      </div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-altar">
+        <img class="altar-duo" src="assets/characters/lionis-zed.png" alt="Lionis and Zed" loading="lazy">
+      </div>
+      <article class="parchment">
+        <h2>A Magicless Knight And The Soul That Chose Him</h2>
+        <p>In a world where magic defines worth, Lionis was born with none. Zed saves him through a soul pact, awakening a forbidden path: hunt monsters, cook them, eat them, and become strong enough to challenge the Calamity Dragon.</p>
+        <p>What begins as survival becomes a story about friendship, possession, sacrifice, and refusing to lose the soul that saved you.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img src="assets/media/meowstoria-header-logo.png" alt="Meowstoria">
+    <p>Parry mastery. Monster-eating progression. Possession-powered combat. Feast before the hunt.</p>
+    <div class="footer-links">
+      <a href="#">Steam</a>
+      <a href="#">Press Kit</a>
+      <a href="#">Contact</a>
+      <a href="#">MOT Studio</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
