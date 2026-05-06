@@ -1380,132 +1380,337 @@ main{
   .feature-section.scene-red::before{
     height:clamp(96px,13vh,160px)!important;
   }
-}\n\n/* =========================================================
-   HERO PITCH UX WIDTH + FONT PATCH
-   Fokus:
-   - Text mengikuti lebar layar desktop dengan max 80vw
-   - Font tidak terlalu besar
-   - Line length lebih enak dibaca
-   - Mobile tetap aman dan tidak terlalu kecil
-   ========================================================= */
-
-.hero-content{
-  width:min(80vw, 1180px)!important;
-  max-width:none!important;
-  bottom:clamp(52px, 8vh, 96px)!important;
-  padding:0!important;
 }
-
-.hero-pitch{
-  width:100%!important;
-  max-width:none!important;
-  margin:0 auto!important;
-  font-size:clamp(21px, 1.72vw, 31px)!important;
-  line-height:1.18!important;
-  letter-spacing:.005em!important;
-  text-wrap:balance;
-}
-
-/* Tablet */
-@media(max-width:860px){
-  .hero-content{
-    width:min(88vw, 720px)!important;
-    bottom:clamp(34px, 7svh, 58px)!important;
-    padding:0 10px!important;
-  }
-
-  .hero-pitch{
-    font-size:clamp(20px, 4.6vw, 28px)!important;
-    line-height:1.12!important;
-  }
-}
-
-/* Mobile */
-@media(max-width:540px){
-  .hero-content{
-    width:92vw!important;
-    bottom:clamp(26px, 6svh, 44px)!important;
-  }
-
-  .hero-pitch{
-    font-size:clamp(19px, 5.9vw, 25px)!important;
-    line-height:1.10!important;
-  }
-}\n
 
 /* =========================================================
-   HERO PITCH DESKTOP WIDE + SLIGHTLY BIGGER FONT PATCH V2
-   Fokus:
-   - Desktop benar-benar melebar mengikuti layar
-   - Menghapus batas max-width lama yang membuat teks sempit
-   - Font sedikit lebih besar tapi tetap UX-friendly
+   Theme 01 — Warm Brown Blend
+   Palette based on uploaded guide:
+   white / brown / charcoal / blood red / cream / deep maroon.
+   Paste-ready full CSS file: original CSS + this final override.
    ========================================================= */
 
-.hero-content{
-  left:50%!important;
-  right:auto!important;
-  width:92vw!important;
-  max-width:1560px!important;
-  min-width:0!important;
-  transform:translateX(-50%)!important;
-  bottom:clamp(56px, 8vh, 104px)!important;
-  padding:0 24px!important;
-  display:block!important;
-  text-align:center!important;
+:root{
+  --ink:#2b100b!important;
+  --ink-soft:#32160f!important;
+  --blood:#981601!important;
+  --blood-dark:#5b1209!important;
+  --cream:#eddac4!important;
+  --paper:#f0dec5!important;
+  --bone:#d8c4a7!important;
+  --meow-white:#f7f6f3!important;
+  --meow-coffee:#4b3027!important;
+  --meow-charcoal:#5a3a2f!important;
+  --meow-red:#981601!important;
+  --meow-cream:#eddac4!important;
+  --meow-black:#2b100b!important;
+  --flow-top:#4b3027!important;
+  --flow-mid:#5a3a2f!important;
+  --flow-deep:#2b100b!important;
+
+  --hero-trailer-seam:#35130e!important;
+  --hero-trailer-top:#35130e!important;
+  --hero-trailer-mid:#4b3027!important;
+  --hero-trailer-end:#5a3a2f!important;
+
+  --trailer-combat-join:#4a3129!important;
+  --trailer-combat-warm:#4b3027!important;
+  --combat-soft-mid:#40322e!important;
+  --combat-deep:#5a3a2f!important;
+
+  --combat-possession-join:#3a2824!important;
+  --combat-possession-top:#4a3129!important;
+  --combat-possession-mid:#40322e!important;
+  --combat-possession-deep:#2b1711!important;
+
+  --possession-food-join:#29130d!important;
+  --possession-food-red-dark:#29130d!important;
+  --possession-food-red-mid:#3b2119!important;
+  --possession-food-red-warm:#4a3129!important;
+}
+
+html,
+body{
+  background:#2b100b!important;
+  color:#eddac4!important;
+}
+
+main{
+  background:
+    linear-gradient(180deg,
+      #29130d 0%,
+      #4b3027 28%,
+      #38302e 54%,
+      #3b2119 76%,
+      #2b100b 100%)!important;
+}
+
+.site-header{
+  background:linear-gradient(90deg,rgba(43,16,11,.96),rgba(75,48,39,.92),rgba(43,16,11,.96))!important;
+  border-bottom:1px solid color-mix(in srgb, #eddac4 18%, transparent)!important;
+}
+
+.site-header.scrolled{
+  background:linear-gradient(90deg,rgba(18,8,5,.97),rgba(43,16,11,.96),rgba(18,8,5,.97))!important;
+}
+
+.hero{
+  background:#2b100b!important;
+}
+
+.layer-video-overlay{
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, #2b100b 18%, transparent) 0%,
+      color-mix(in srgb, #2b100b 34%, transparent) 45%,
+      color-mix(in srgb, #2b100b 92%, transparent) 100%),
+    radial-gradient(ellipse at 50% 78%,color-mix(in srgb, #2b100b 58%, transparent),transparent 55%),
+    linear-gradient(90deg,color-mix(in srgb, #2b100b 35%, transparent),transparent 22%,transparent 78%,color-mix(in srgb, #2b100b 35%, transparent))!important;
+}
+
+.hero::before{
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, #2b100b 0%, transparent) 0%,
+      color-mix(in srgb, #2b100b 22%, transparent) 26%,
+      color-mix(in srgb, #35130e 62%, transparent) 58%,
+      #35130e 100%)!important;
 }
 
 .hero-pitch{
-  display:block!important;
-  width:100%!important;
-  max-width:none!important;
-  min-width:0!important;
-  margin:0 auto!important;
-  font-size:clamp(26px, 2.18vw, 40px)!important;
-  line-height:1.12!important;
-  letter-spacing:.002em!important;
-  text-wrap:normal!important;
-  text-align:center!important;
+  color:#f7f6f3!important;
+  text-shadow:0 4px 0 color-mix(in srgb, #2b100b 95%, black),0 16px 28px rgba(0,0,0,.55)!important;
 }
 
-/* Large desktop / ultrawide */
-@media(min-width:1440px){
-  .hero-content{
-    width:90vw!important;
-    max-width:1680px!important;
-  }
-
-  .hero-pitch{
-    font-size:clamp(28px, 2.05vw, 42px)!important;
-    line-height:1.10!important;
-  }
+.trailer-zone{
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, #35130e 0%, transparent) 0%,
+      color-mix(in srgb, #35130e 42%, transparent) 18%,
+      #35130e 38%,
+      #4b3027 62%,
+      #5a3a2f 82%,
+      #4a3129 100%)!important;
+  color:#eddac4!important;
 }
 
-/* Tablet */
+.trailer-zone::before{
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, #35130e 0%, transparent) 0%,
+      color-mix(in srgb, #35130e 18%, transparent) 32%,
+      color-mix(in srgb, #35130e 72%, transparent) 78%,
+      color-mix(in srgb, #35130e 0%, transparent) 100%)!important;
+}
+
+.trailer-zone::after{
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, #4a3129 0%, transparent) 0%,
+      color-mix(in srgb, #4a3129 46%, transparent) 46%,
+      #4a3129 100%)!important;
+}
+
+.trailer-title h2{
+  color:#eddac4!important;
+  text-shadow:0 5px 0 #2b100b,0 22px 38px rgba(0,0,0,.45)!important;
+}
+
+.trailer-title::before,
+.trailer-title::after{
+  background:linear-gradient(90deg,transparent,#eddac4,transparent)!important;
+}
+
+.media-frame{
+  border-color:#eddac4!important;
+  background:#120807!important;
+}
+
+.play-button,
+.blood-button,
+.trailer-menu button.is-active{
+  background:#981601!important;
+}
+
+.feature-section.scene-pawleaf{
+  background:
+    linear-gradient(180deg,
+      #4a3129 0%,
+      #4a3129 12%,
+      #40322e 50%,
+      #3a2824 100%)!important;
+}
+
+.feature-section.scene-pawleaf::before{
+  background:
+    linear-gradient(180deg,
+      #4a3129 0%,
+      color-mix(in srgb, #4a3129 55%, transparent) 42%,
+      color-mix(in srgb, #4a3129 0%, transparent) 100%)!important;
+}
+
+.feature-section.scene-pawleaf::after{
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, #3a2824 0%, transparent) 0%,
+      color-mix(in srgb, #3a2824 46%, transparent) 44%,
+      #3a2824 100%)!important;
+}
+
+.feature-section.scene-night.alt{
+  background:
+    linear-gradient(180deg,
+      #3a2824 0%,
+      #3a2824 14%,
+      #2b1711 52%,
+      #29130d 100%)!important;
+}
+
+.feature-section.scene-night.alt::before{
+  background:
+    linear-gradient(180deg,
+      #3a2824 0%,
+      color-mix(in srgb, #3a2824 70%, transparent) 44%,
+      color-mix(in srgb, #3a2824 0%, transparent) 100%)!important;
+}
+
+.feature-section.scene-night.alt::after{
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, #29130d 0%, transparent) 0%,
+      color-mix(in srgb, #29130d 44%, transparent) 42%,
+      #29130d 100%)!important;
+}
+
+.feature-section.scene-red{
+  background:
+    linear-gradient(180deg,
+      #29130d 0%,
+      #3b2119 48%,
+      #4a3129 100%)!important;
+}
+
+.feature-section.scene-red::before{
+  background:
+    linear-gradient(180deg,
+      #29130d 0%,
+      color-mix(in srgb, #29130d 72%, transparent) 44%,
+      color-mix(in srgb, #29130d 0%, transparent) 100%)!important;
+}
+
+.ritual-section{
+  background:linear-gradient(180deg,#4a3129 0%,#5a3a2f 52%,#2b100b 100%)!important;
+}
+
+.world-section{
+  background:linear-gradient(180deg,#2b100b 0%,#3b2119 34%,#4b3027 72%,#5a3a2f 100%)!important;
+}
+
+.story-section{
+  background:linear-gradient(180deg,#5a3a2f 0%,#4b3027 45%,#2b100b 100%)!important;
+}
+
+.proof-section{
+  background:linear-gradient(180deg,#2b100b 0%,#5b1209 42%,#981601 70%,#32160f 100%)!important;
+}
+
+.site-footer{
+  background:linear-gradient(180deg,#2b100b 0%,#110806 100%)!important;
+}
+
+.smoke-panel{
+  background:color-mix(in srgb, #2b100b 78%, transparent)!important;
+  border-color:color-mix(in srgb, #eddac4 14%, transparent)!important;
+}
+
+h2,
+.realm-grid b,
+.proof-grid strong,
+.team-card h3,
+.footer-links a{
+  color:#981601!important;
+}
+
+.tier-row span,
+.pipeline span,
+.ritual-actions span{
+  border-color:color-mix(in srgb, #eddac4 35%, transparent)!important;
+  background:color-mix(in srgb, #eddac4 12%, transparent)!important;
+}
+
+.pipeline i,
+.slash-list li::before{
+  background:#981601!important;
+}
+
 @media(max-width:860px){
-  .hero-content{
-    width:92vw!important;
-    max-width:760px!important;
-    bottom:clamp(34px, 7svh, 58px)!important;
-    padding:0 10px!important;
+  .trailer-zone{
+    background:
+      linear-gradient(180deg,
+        color-mix(in srgb, #35130e 0%, transparent) 0%,
+        color-mix(in srgb, #35130e 46%, transparent) 18%,
+        #35130e 38%,
+        #4b3027 62%,
+        #5a3a2f 82%,
+        #4a3129 100%)!important;
   }
 
-  .hero-pitch{
-    font-size:clamp(21px, 4.8vw, 29px)!important;
-    line-height:1.12!important;
+  .feature-section.scene-pawleaf{
+    background:
+      linear-gradient(180deg,
+        #4a3129 0%,
+        #40322e 48%,
+        #3a2824 100%)!important;
+  }
+
+  .feature-section.scene-night.alt{
+    background:
+      linear-gradient(180deg,
+        #3a2824 0%,
+        #2b1711 50%,
+        #29130d 100%)!important;
+  }
+
+  .feature-section.scene-red{
+    background:
+      linear-gradient(180deg,
+        #29130d 0%,
+        #3b2119 52%,
+        #4a3129 100%)!important;
   }
 }
 
-/* Mobile */
-@media(max-width:540px){
-  .hero-content{
-    width:94vw!important;
-    max-width:none!important;
-    bottom:clamp(26px, 6svh, 44px)!important;
-    padding:0 8px!important;
-  }
-
-  .hero-pitch{
-    font-size:clamp(20px, 6.2vw, 26px)!important;
-    line-height:1.10!important;
-  }
+/* === Inline YouTube trailer player / Error 153 safer embed === */
+.trailer-main-video.is-playing{
+  aspect-ratio:16/9;
+  padding:12px;
 }
+.trailer-main-video.is-playing iframe{
+  display:block;
+  width:100%;
+  aspect-ratio:16/9;
+  height:auto;
+  border:0;
+  background:#000;
+}
+.trailer-main-video.is-playing::before{
+  pointer-events:none;
+}
+.youtube-fallback-link{
+  position:absolute;
+  right:22px;
+  bottom:18px;
+  z-index:4;
+  padding:10px 14px;
+  border-radius:999px;
+  background:rgba(0,0,0,.72);
+  color:#fff;
+  font-weight:900;
+  font-size:13px;
+  text-transform:uppercase;
+}
+.youtube-fallback-link:hover{
+  background:var(--blood, #ff2029);
+  color:#120807;
+}
+
+
