@@ -225,4 +225,33 @@ function setupTeamCarousel() {
   });
 }
 
+
+function setupInlineLoopVideos() {
+  const videos = document.querySelectorAll("video[autoplay][loop]");
+  videos.forEach(video => {
+    video.muted = true;
+    video.loop = true;
+    video.playsInline = true;
+    video.setAttribute("muted", "");
+    video.setAttribute("playsinline", "");
+
+    const tryPlay = () => {
+      const playPromise = video.play?.();
+      if (playPromise?.catch) playPromise.catch(() => {});
+    };
+
+    if (video.readyState >= 2) {
+      tryPlay();
+    } else {
+      video.addEventListener("canplay", tryPlay, { once: true });
+    }
+  });
+}
+
+document.addEventListener("visibilitychange", () => {
+  if (!document.hidden) setupInlineLoopVideos();
+});
+
+setupInlineLoopVideos();
+
 setupTeamCarousel();
