@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import uniqueSwordBottom from '../assets/img/Unique_SwordBottom.png'
-import featurePattern from '../assets/img/feature_Pattern.png'
+import featurePattern from '../assets/img/Feature_Pattern.png'
 import gambar1 from '../assets/img/Story_Background.png'
 
 export default function Fitur() {

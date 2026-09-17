@@ -1,7 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import aboutPattern from '../assets/img/About_Pattern.png';
-import aboutNHomePattern from '../assets/img/aboutNHome_Pattern.png';
 import aboutLogoMeowstoria2 from '../assets/img/About_LogoMeowstoria2.png';
 import uniqueSwordTop from '../assets/img/Unique_SwordTop.png';
 import video from '../assets/img/video.png';
