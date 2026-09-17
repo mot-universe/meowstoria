@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Sintaks CSS Murni untuk Font Utilities */
+.font-title {
+  font-family: 'Cinzel', serif;
+}
+
+.font-paragraf {
+  font-family: 'Nunito Sans', sans-serif;
+}
