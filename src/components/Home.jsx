@@ -90,7 +90,7 @@ export default function Home() {
                     </div>
                     <div className="pl-2 flex flex-col justify-center">
                         <p className="font-paragraf text-sm text-[#FEC95C]">&copy; Copyright2026 MoT Studio. Hak cipta dilindungi.</p>
-                        <p className="font-paragraf text-sm text-[#FEC95C]">Based in: Indonesia</p>
+                        <p className="font-paragraf text-sm text-[#FEC95C]">Based in: Malang Indonesia</p>
                         <p className="font-paragraf text-sm text-[#FEC95C]">dev.mot.universe@gmail.com</p>
                     </div>
                 </div>
