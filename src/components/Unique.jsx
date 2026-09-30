@@ -25,7 +25,7 @@ export default function Unique() {
                         delay: 1.2,                           
                         ease: "easeOut" 
                     }}
-                    className="font-paragraf text-center text-lg text-[#23201E] pb-5 sm:text-lg xl:text-xl">kau bisa merubah semua monster menjadi coklat dan memakanya</motion.p>
+                    className="font-paragraf text-center text-lg text-[#23201E] pb-5 sm:text-lg xl:text-xl">kau akan bisa merubah semua monster menjadi coklat dan memakanya</motion.p>
                 <motion.div 
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -38,7 +38,7 @@ export default function Unique() {
                     className="py-5 flex flex-col gap-4">
                     <div className="flex flex-col items-center gap-3">
                         <img src={makeCoklat} alt="" className="w-full lg:w-96"/>
-                        <p className="font-paragraf text-center text-sm text-[#23201E] sm:text-md xl:text-lg">ZED dengan sihirnya akan merubah monster yang sudah dikalahkan menjadi coklat</p>
+                        <p className="font-paragraf text-center text-sm text-[#23201E] sm:text-md xl:text-lg">ZED penyihir dengan sihirnya akan merubah monster yang sudah dikalahkan menjadi coklat</p>
                     </div>
                     <div className="flex flex-col items-center gap-3">
                         <img src={makeChonk} alt="" className="w-full lg:w-96"/>

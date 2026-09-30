@@ -35,7 +35,7 @@ export default function Navbar() {
     };
 
     return(
-        <nav className="sticky top-0 z-50 w-full px-4 py-3 bg-[#1F1C1A]/80 backdrop-blur-md flex justify-between items-center sm:px-8 xl:px-24 2xl:px-36">
+        <nav className="sticky top-0 z-50 w-full px-4 py-3 bg-[#1F1C1A]/40 backdrop-blur-md flex justify-between items-center sm:px-8 xl:px-24 2xl:px-36">
             {/* Logo */}
             <motion.img whileHover={{scale: 1.05}} src={menuLogo} alt="menuLogo" className="w-24 cursor-pointer sm:w-28 xl:w-36" />
             
